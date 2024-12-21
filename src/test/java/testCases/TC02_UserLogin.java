@@ -6,10 +6,11 @@ import pageObjects.IndexPage;
 import pageObjects.LoginPage;
 
 public class TC02_UserLogin extends BaseClass{
-    
+
     @Test
     public void accountLoginTest(){
         IndexPage indexPage = new IndexPage(driver);
+        Assert.assertTrue(driver.getTitle().contains(IndexPage.expectedTitle),"Home Page did not load: Actual - " + driver.getTitle() + " Expected - " + IndexPage.expectedTitle);
         indexPage.clickLoginLink();
 
         LoginPage loginPage = new LoginPage(driver);

@@ -25,6 +25,7 @@ public class TC01_UserRegistration extends BaseClass {
     @Test
     public void accountRegistrationTest() {
         IndexPage indexPage = new IndexPage(driver);
+        Assert.assertTrue(driver.getTitle().contains(IndexPage.expectedTitle),"Home Page did not load");
         indexPage.clickLoginLink();
 
         LoginPage loginPage = new LoginPage(driver);

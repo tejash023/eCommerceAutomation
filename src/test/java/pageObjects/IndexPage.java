@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class IndexPage extends BasePage {
 
+    public static String expectedTitle = "Automation Exercise";
 
     public IndexPage(WebDriver driver){
         super(driver);
