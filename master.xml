@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Cross Browser Testing Suite" thread-count="5" >
+
+
+    <test name="Chrome Register Test">
+        <classes>
+            <class name="testCases.TC01_UserRegistration" />
+        </classes>
+    </test>
+
+</suite>
