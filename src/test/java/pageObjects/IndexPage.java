@@ -32,6 +32,10 @@ public class IndexPage extends BasePage {
     @FindBy(xpath = "//a[@href='/delete_account']")
     WebElement deleteAccountLink;
 
+    //Logged in Message
+    @FindBy(xpath = "//a[contains(text(), 'Logged in as')]")
+    WebElement loggedInUsernameConfirmation;
+
     public void clickLoginLink(){
         loginPageLink.click();
     }
@@ -50,5 +54,13 @@ public class IndexPage extends BasePage {
 
     public void deleteAccount(){
         deleteAccountLink.click();
+    }
+
+    public boolean isLoggedInUsernamePresent(){
+        try{
+            return loggedInUsernameConfirmation.isDisplayed();
+        }catch (Exception e){
+            return false;
+        }
     }
 }
