@@ -64,4 +64,9 @@ public class IndexPage extends BasePage {
             return false;
         }
     }
+
+    public boolean isPageTitleCorrect(){
+        String actualTitle = driver.getTitle();
+        return actualTitle.contains(expectedTitle);
+    }
 }

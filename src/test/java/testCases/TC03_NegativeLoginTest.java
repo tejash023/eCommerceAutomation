@@ -11,7 +11,7 @@ public class TC03_NegativeLoginTest extends  BaseClass{
     public void negativeLoginTest(){
 
         IndexPage indexPage = new IndexPage(driver);
-        Assert.assertTrue(driver.getTitle().contains(IndexPage.expectedTitle), "Homepage did not load");
+        Assert.assertTrue(indexPage.isPageTitleCorrect(), "Homepage did not load");
         indexPage.clickLoginLink();
 
         LoginPage loginPage = new LoginPage(driver);

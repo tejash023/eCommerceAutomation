@@ -10,7 +10,7 @@ public class TC04_ContactForm extends BaseClass{
     @Test
     public void contactUsForm(){
         IndexPage indexPage = new IndexPage(driver);
-        Assert.assertTrue(driver.getTitle().contains(IndexPage.expectedTitle), "Index Page title is incorrect.");
+        Assert.assertTrue(indexPage.isPageTitleCorrect(), "Index Page title is incorrect.");
         indexPage.contactUsLink();
 
         ContactPage contactPage = new ContactPage(driver);
@@ -29,6 +29,6 @@ public class TC04_ContactForm extends BaseClass{
 
         Assert.assertEquals(contactPage.isSubmitSuccessConfirmationDisplayed(), true, "Contact Page successful submit message not displayed.");
         contactPage.clickContactHomeButton();
-        Assert.assertTrue(driver.getTitle().contains(IndexPage.expectedTitle), "Failed to navigate back to Index Page.");
+        Assert.assertTrue(indexPage.isPageTitleCorrect(), "Failed to navigate back to Index Page.");
     }
 }
