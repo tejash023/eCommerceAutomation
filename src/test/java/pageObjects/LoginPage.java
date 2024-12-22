@@ -96,6 +96,7 @@ public class LoginPage extends BasePage{
     }
 
     public void clickSignUpButton(){
+        wait.until(ExpectedConditions.visibilityOf(signUpButton));
         signUpButton.click();
     }
 
