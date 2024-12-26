@@ -22,30 +22,39 @@ public class TC01_UserRegistration extends BaseClass {
     private static final int TEST_MONTH = 2;
     private static final String TEST_YEAR = "1998";
 
-    @Test
+    @Test(groups = {"Master", "Regression"})
     public void accountRegistrationTest() {
-        IndexPage indexPage = new IndexPage(driver);
-        Assert.assertTrue(indexPage.isPageTitleCorrect(),"Home Page did not load");
-        indexPage.clickLoginLink();
+        logger.info("********** Started TC01 User Registration Test **********");
+        try{
+            IndexPage indexPage = new IndexPage(driver);
+            Assert.assertTrue(indexPage.isPageTitleCorrect(),"Home Page did not load");
+            indexPage.clickLoginLink();
 
-        LoginPage loginPage = new LoginPage(driver);
-        verifyElementDisplayed("Sign-up message", loginPage.isSignUpMessageDisplayed());
-        loginPage.setTextSignUpName(TEST_NAME);
-        loginPage.setTextSignUpEmail(TEST_EMAIL);
-        loginPage.clickSignUpButton();
+            LoginPage loginPage = new LoginPage(driver);
+            verifyElementDisplayed("Sign-up message", loginPage.isSignUpMessageDisplayed());
+            loginPage.setTextSignUpName(TEST_NAME);
+            loginPage.setTextSignUpEmail(TEST_EMAIL);
+            loginPage.clickSignUpButton();
 
-        SignUpPage signUpPage = initializeSignUpPage();
-        signUpPage.clickCreateAccountButton();
+            SignUpPage signUpPage = initializeSignUpPage();
+            signUpPage.clickCreateAccountButton();
 
-        AccountCreated accountCreated = new AccountCreated(driver);
-        verifyElementDisplayed("Account created confirmation message", accountCreated.isAccountCreatedMessageDisplayed());
-        accountCreated.clickContinueButton();
+            AccountCreated accountCreated = new AccountCreated(driver);
+            verifyElementDisplayed("Account created confirmation message", accountCreated.isAccountCreatedMessageDisplayed());
+            accountCreated.clickContinueButton();
 
-        indexPage.deleteAccount();
+            indexPage.clickDeleteAccount();
 
-        DeleteAccountPage deleteAccountPage = new DeleteAccountPage(driver);
-        verifyElementDisplayed("Account deleted confirmation message", deleteAccountPage.isAccountDeletedMessageDisplayed());
-        deleteAccountPage.clickContinueButton();
+            DeleteAccountPage deleteAccountPage = new DeleteAccountPage(driver);
+            verifyElementDisplayed("Account deleted confirmation message", deleteAccountPage.isAccountDeletedMessageDisplayed());
+            deleteAccountPage.clickContinueButton();
+        }catch (Exception e){
+            logger.error("TC01 Test Failed");
+            logger.debug("Debug Logs");
+            Assert.fail("TC01 Test Failed");
+        }
+        logger.info("********** Finished TC01 User Registration Test **********");
+
     }
 
     private SignUpPage initializeSignUpPage() {
