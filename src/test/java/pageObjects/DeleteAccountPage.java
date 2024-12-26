@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class DeleteAccountPage extends BasePage{
 
@@ -25,6 +26,7 @@ public class DeleteAccountPage extends BasePage{
     }
 
     public void clickContinueButton(){
+        wait.until(ExpectedConditions.visibilityOf(continueButton));
         continueButton.click();
     }
 }

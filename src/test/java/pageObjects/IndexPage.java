@@ -49,11 +49,11 @@ public class IndexPage extends BasePage {
         cartPageLink.click();
     }
 
-    public void contactUsLink(){
+    public void clickContactUsLink(){
         contactPageLink.click();
     }
 
-    public void deleteAccount(){
+    public void clickDeleteAccount(){
         deleteAccountLink.click();
     }
 

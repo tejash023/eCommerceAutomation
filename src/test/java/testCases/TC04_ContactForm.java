@@ -11,7 +11,7 @@ public class TC04_ContactForm extends BaseClass{
     public void contactUsForm(){
         IndexPage indexPage = new IndexPage(driver);
         Assert.assertTrue(indexPage.isPageTitleCorrect(), "Index Page title is incorrect.");
-        indexPage.contactUsLink();
+        indexPage.clickContactUsLink();
 
         ContactPage contactPage = new ContactPage(driver);
         contactPage.setContactName("Jon");

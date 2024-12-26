@@ -56,6 +56,7 @@ public class ContactPage extends BasePage{
     }
 
     public void setTextContactMessage(String message){
+        wait.until(ExpectedConditions.visibilityOf(textContactMessage));
         textContactMessage.sendKeys(message);
     }
 
