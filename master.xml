@@ -4,6 +4,9 @@
 
 
     <test name="Chrome Register Test">
+        <parameter name="operatingSystem" value="windows" />
+        <parameter name="browser" value="chrome" />
+
         <classes>
             <class name="testCases.TC01_UserRegistration" />
             <class name="testCases.TC02_UserLogin" />

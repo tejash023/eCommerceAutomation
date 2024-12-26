@@ -1,0 +1,41 @@
+2024-12-26 21:22:36 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\TejashwaRajvardhan\IdeaProjects\eCommerceAutomation\master.xml
+
+2024-12-26 21:27:20 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\TejashwaRajvardhan\IdeaProjects\eCommerceAutomation\master.xml
+
+2024-12-26 21:29:22 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\TejashwaRajvardhan\IdeaProjects\eCommerceAutomation\master.xml
+
+2024-12-26 21:29:32 INFO  TC01_UserRegistration:27 - ********** Started TC01 User Registration Test **********
+2024-12-26 21:29:44 INFO  TC01_UserRegistration:56 - ********** Finished TC01 User Registration Test **********
+2024-12-26 21:29:50 INFO  TC02_UserLogin:12 - ********** Started TC02 User Login Test **********
+2024-12-26 21:29:56 INFO  TC02_UserLogin:28 - ********** Finished TC02 User Login Test **********
+2024-12-26 21:32:57 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\TejashwaRajvardhan\IdeaProjects\eCommerceAutomation\master.xml
+
+2024-12-26 21:33:01 INFO  TC01_UserRegistration:58 - ****** Test Started ******
+2024-12-26 21:33:01 INFO  TC01_UserRegistration:27 - ********** Started TC01 User Registration Test **********
+2024-12-26 21:33:01 INFO  TC01_UserRegistration:63 - ****** Testing Completed ******
+2024-12-26 21:33:07 INFO  TC02_UserLogin:58 - ****** Test Started ******
+2024-12-26 21:33:07 INFO  TC02_UserLogin:12 - ********** Started TC02 User Login Test **********
+2024-12-26 21:33:07 INFO  TC02_UserLogin:63 - ****** Testing Completed ******
+2024-12-26 21:33:12 INFO  TC03_NegativeLoginTest:58 - ****** Test Started ******
+2024-12-26 21:33:12 INFO  TC03_NegativeLoginTest:63 - ****** Testing Completed ******
+2024-12-26 21:33:19 INFO  TC04_ContactForm:58 - ****** Test Started ******
+2024-12-26 21:33:19 INFO  TC04_ContactForm:63 - ****** Testing Completed ******
+2024-12-26 21:33:55 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\TejashwaRajvardhan\IdeaProjects\eCommerceAutomation\master.xml
+
+2024-12-26 21:34:00 INFO  TC01_UserRegistration:58 - ****** Test Started ******
+2024-12-26 21:34:00 INFO  TC01_UserRegistration:27 - ********** Started TC01 User Registration Test **********
+2024-12-26 21:34:15 INFO  TC01_UserRegistration:56 - ********** Finished TC01 User Registration Test **********
+2024-12-26 21:34:15 INFO  TC01_UserRegistration:63 - ****** Testing Completed ******
+2024-12-26 21:34:20 INFO  TC02_UserLogin:58 - ****** Test Started ******
+2024-12-26 21:34:20 INFO  TC02_UserLogin:12 - ********** Started TC02 User Login Test **********
+2024-12-26 21:34:25 INFO  TC02_UserLogin:28 - ********** Finished TC02 User Login Test **********
+2024-12-26 21:34:25 INFO  TC02_UserLogin:63 - ****** Testing Completed ******
+2024-12-26 21:34:32 INFO  TC03_NegativeLoginTest:58 - ****** Test Started ******
+2024-12-26 21:34:35 INFO  TC03_NegativeLoginTest:63 - ****** Testing Completed ******
+2024-12-26 21:34:40 INFO  TC04_ContactForm:58 - ****** Test Started ******
+2024-12-26 21:34:46 INFO  TC04_ContactForm:63 - ****** Testing Completed ******
