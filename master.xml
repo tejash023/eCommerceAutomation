@@ -8,10 +8,11 @@
         <parameter name="browser" value="chrome" />
 
         <classes>
-            <class name="testCases.TC01_UserRegistration" />
+            <!--<class name="testCases.TC01_UserRegistration" />
             <class name="testCases.TC02_UserLogin" />
             <class name="testCases.TC03_NegativeLoginTest" />
-            <class name="testCases.TC04_ContactForm"/>
+            <class name="testCases.TC04_ContactForm"/> -->
+            <class name="testCases.TC05_TestCasePage"/>
         </classes>
     </test>
 

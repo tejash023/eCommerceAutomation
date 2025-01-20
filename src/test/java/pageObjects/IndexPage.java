@@ -37,6 +37,10 @@ public class IndexPage extends BasePage {
     @FindBy(xpath = "//a[contains(text(), 'Logged in as')]")
     WebElement loggedInUsernameConfirmation;
 
+    //Test Case Page Link
+    @FindBy(xpath = "//a[contains(text(), 'Test Cases'')]")
+    WebElement testCasePageLink;
+
     public void clickLoginLink(){
         loginPageLink.click();
     }
@@ -68,5 +72,9 @@ public class IndexPage extends BasePage {
     public boolean isPageTitleCorrect(){
         String actualTitle = driver.getTitle();
         return actualTitle.contains(expectedTitle);
+    }
+
+    public void clickTestCasePageLink(){
+        testCasePageLink.click();
     }
 }
